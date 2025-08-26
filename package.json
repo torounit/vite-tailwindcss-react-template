@@ -34,10 +34,5 @@
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.41.0",
     "vite": "^7.1.3"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": "tsc --noEmit",
-    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
-    "*.{js,css,md,html}": "prettier --write"
   }
 }
