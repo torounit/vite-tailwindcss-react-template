@@ -4,7 +4,6 @@ import App from "./App";
 const container = document.querySelector("#content");
 if (!container) {
   throw new Error("No content container found");
-}
-else {
+} else {
   createRoot(container).render(<App />);
 }
