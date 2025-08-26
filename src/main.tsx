@@ -1,4 +1,10 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 
-createRoot(document.querySelector("#content")).render(<App />);
+const container = document.querySelector("#content");
+if (!container) {
+  throw new Error("No content container found");
+}
+else {
+  createRoot(container).render(<App />);
+}
