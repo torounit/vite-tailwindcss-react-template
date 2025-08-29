@@ -15,6 +15,6 @@
     "types": [],
     "outDir": "dist"
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.mts"],
   "exclude": ["node_modules", "dist"]
 }
