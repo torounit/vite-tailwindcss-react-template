@@ -1,10 +1,10 @@
 import { includeIgnoreFile } from "@eslint/compat";
 import eslint from "@eslint/js";
 import globals from "globals";
-import eslintPluginReact from "eslint-plugin-react";
+import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
-import eslintConfigPrettier from "eslint-config-prettier";
+import prettier from "eslint-config-prettier";
 import perfectionist from "eslint-plugin-perfectionist";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import tseslint from "typescript-eslint";
@@ -18,10 +18,10 @@ export default tseslint.config(
   tseslint.configs.stylisticTypeChecked,
   perfectionist.configs["recommended-natural"],
   jsxA11y.flatConfigs.recommended,
-  eslintPluginReact.configs.flat.recommended,
+  react.configs.flat.recommended,
   reactHooks.configs["recommended-latest"],
   reactRefresh.configs.vite,
-  eslintConfigPrettier,
+  prettier,
   includeIgnoreFile(gitignorePath, "Imported .gitignore patterns"),
   {
     ignores: ["eslint.config.mjs"],
